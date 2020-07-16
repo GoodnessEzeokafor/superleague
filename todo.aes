@@ -1,3 +1,69 @@
+/**
+    AETERNITY SUPERHEROLEAGUE
+
+    REFERENCES
+        * https://blockgeeks.com/guides/smart-contracts/
+        * https://github.com/aeternity/aesophia/blob/lima/docs/sophia.md#language-features
+        * https://github.com/aeternity/aesophia/blob/lima/docs/sophia.md
+        * https://github.com/aeternity/aesophia/blob/lima/docs/sophia_stdlib.md
+
+    SMART CONTRACT:
+
+        * According to Wikipedia A smart contract is a computer program or a transaction protocol which is intended to automatically execute, 
+        control or document legally relevant events and actions according to the terms of a contract or an agreement.
+        
+        * Basically a smart contract is a code thats stores or runs on the blockchain
+        
+        * Smart contracts help you exchange money, property, shares, or anything of value in a transparent, 
+            conflict-free way while avoiding the services of a middleman.
+
+        * Vitalik explanation of a smart contract 
+            " an asset or currency is transferred into a program “and the program runs this code and at some point it 
+              automatically validates a condition and it automatically 
+            determines whether the asset should go to one person or back to the other
+             person, 
+            or whether it should be immediately refunded to the person who sent it or some combination thereof."
+    
+    BENEFITS OF SMART CONTRACTS
+        * Autonomy
+        * Trust 
+        * Backup 
+        * Safety
+        * Accuracy
+
+    SOPHIA LANGUAGE FEATURE
+
+        LAYOUT BLOCKS 
+
+            Sophia uses Python-style layout rules to group declarations and statements. 
+            A layout block with more than one element must start on a separate line and be indented more than the currently enclosing layout block. 
+            Blocks with a single element can be written on the same line as the previous token.
+            Each element of the block must share the same indentation and no part of an element may be indented less than the indentation of the block. For instance
+
+        MAP/RECORDS: A Sophia record type is given by a fixed set of fields with associated, possibly different, types. For instance
+
+             record todolist={
+                        id:int,
+                        todo:string, 
+                        creator:address, 
+                        created:int, 
+                        completed:bool} 
+
+        STATE : A user defined type holding the contract state	
+             
+              record state={
+                // monitors the state of our contract
+                index_counter:int,
+                todolists:map(int, todolist)}
+    LIST
+        A Sophia list is a dynamically sized, homogenous, immutable, singly linked list. 
+        A list is constructed with the syntax [1, 2, 3].
+        EXAMPLES:
+                [1, 33, 2, 666]
+                ['abc','acb', 'bca']                                                   : list(int)
+                [(1, "aaa"), (10, "jjj"), (666, "the beast")] 
+**/
+
 contract TodoList =
     record todolist={
         id:int,
