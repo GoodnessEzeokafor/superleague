@@ -1,21 +1,18 @@
 /**
     AETERNITY SUPERHEROLEAGUE
-
-    REFERENCES
-        * https://blockgeeks.com/guides/smart-contracts/
-        * https://github.com/aeternity/aesophia/blob/lima/docs/sophia.md#language-features
-        * https://github.com/aeternity/aesophia/blob/lima/docs/sophia.md
-        * https://github.com/aeternity/aesophia/blob/lima/docs/sophia_stdlib.md
-
     SMART CONTRACT:
 
-        * According to Wikipedia A smart contract is a computer program or a transaction protocol which is intended to automatically execute, 
-        control or document legally relevant events and actions according to the terms of a contract or an agreement.
+        * According to Wikipedia A smart contract is a computer 
+        program or
+         a transactionprotocol which is intended to automatically execute, 
+        control or document legally relevant events and actions according 
+        to the terms of a contract or an agreement.
         
-        * Basically a smart contract is a code thats stores or runs on the blockchain
+        * Basically a smart contract is a code thats stores or 
+        runs on the blockchain
         
-        * Smart contracts help you exchange money, property, shares, or anything of value in a transparent, 
-            conflict-free way while avoiding the services of a middleman.
+        * Smart contracts help you exchange money, property, shares, or
+         anything of value in a transparent, conflict-free way while avoiding the services of a middleman.
 
         * Vitalik explanation of a smart contract 
             " an asset or currency is transferred into a program “and the program runs this code and at some point it 
@@ -31,6 +28,13 @@
         * Safety
         * Accuracy
 
+    TESTNET
+        The testnet is an alternative blockchain to be used for testing. 
+    
+    MAINNET
+        Mainnet (main network) is nothing but the main blockchain 
+        where actual transactions take place in the distributed ledger 
+        and the native cryptocurrencies hold real economic value.
     SOPHIA LANGUAGE FEATURE
 
         LAYOUT BLOCKS 
@@ -62,6 +66,19 @@
                 [1, 33, 2, 666]
                 ['abc','acb', 'bca']                                                   : list(int)
                 [(1, "aaa"), (10, "jjj"), (666, "the beast")] 
+
+    
+
+    CASE STUDY: TODOLIST APPLICATION
+                a smart contract to create task and mark them when completed
+                full codes : https://github.com/GoodnessEzeokafor/superleague/blob/master/todo.aes
+
+    REFERENCES
+        * https://blockgeeks.com/guides/smart-contracts/
+        * https://github.com/aeternity/aesophia/blob/lima/docs/sophia.md#language-features
+        * https://github.com/aeternity/aesophia/blob/lima/docs/sophia.md
+        * https://github.com/aeternity/aesophia/blob/lima/docs/sophia_stdlib.md
+
 **/
 
 contract TodoList =
